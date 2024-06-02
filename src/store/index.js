@@ -1,12 +1,16 @@
+import { data } from 'autoprefixer';
 import {createStore} from 'vuex';
 
+
+import * as actions from "./actions"
+import * as mutations from "./mutations"
+import state from "./state"
+
 const store = createStore({
-    state : {
-        test : '123 '
-    },
+    state ,
     getters :{},
-    actions:{},
-    mutations:{}
+    actions ,
+    mutations
 });
 
 
