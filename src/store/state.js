@@ -1,4 +1,5 @@
 import { data } from "autoprefixer"
+import Orders from "../views/Orders/Orders.vue"
 
 const state = {
     user : {
@@ -6,6 +7,16 @@ const state = {
         data :{}
     },
     products :{
+        loading : false ,
+        data : [],
+        links : [],
+        from : null,
+        to : null,
+        page : 1 ,
+        limit : 10 ,
+        total : null
+    },
+    orders : {
         loading : false ,
         data : [],
         links : [],
